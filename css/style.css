@@ -1,0 +1,161 @@
+.bgimg {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.logodiv {
+    width: 33vw;
+    padding: 3vh;    
+}
+
+.buildings {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 95vh;
+}
+
+.imgleft {
+    max-height: 70vh;
+}
+
+.imgright {
+    max-height: 75vh;
+}
+
+.imglogo {
+    max-width: 3vw;
+    min-width: 30px;
+}
+
+.maintext {
+    position: absolute;
+    width: 100vw;
+    top: 3vh;
+   
+}
+
+.slogan {
+    font-size: xx-large;
+    text-align: center;
+    width: 30vw;
+}
+
+.textcomp {
+    top: 110px;
+    left: 100px;
+}
+
+.textlight {
+    top: 105px;
+    left: 200px;
+}
+
+.textwardrobe {
+    top: 90px;
+    left: 70px;
+}
+
+.textspeech {
+    position: relative;
+    
+    background-color: #f6f5da;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+    border: 3px solid #666;
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 1px 1px 2px #888;
+	-moz-box-shadow: 1px 1px 2px #888;
+	box-shadow: 1px 1px 2px #888;
+}
+
+.textspeech:before { 
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 30px; 
+	top: 45px; 
+	border: 15px solid; 
+	border-color: #666 transparent transparent #666; 
+}
+
+.textspeech:after { 
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 34px; 
+	top: 44px; 
+	border: 10px solid; 
+	border-color: #f6f5da transparent transparent #f6f5da; 
+}
+
+
+@media (max-width: 940px){
+
+    .divright {
+        position: absolute;
+        bottom: 27px;   
+        right: 4vw;        
+    }
+
+    .divleft {
+        position: absolute;
+        bottom: 25px;
+        z-index: 10;  
+    }
+
+    .buildings {
+        display: inline;
+        height: auto;
+    }
+
+    .maintext {
+        position: static;
+    }
+    
+    .slogan {
+        font-size: x-large;
+        width: 100vw;
+    }
+
+    .imgleft {
+        max-height: 65vh;
+    }
+
+    .imgright {
+        max-height: 65vh;
+    }
+}
+
+@media (max-width: 500px){
+    .imgright {
+        max-width: 52vw;
+    }
+
+    .imgleft {
+       max-height: 60vh;
+    }
+
+    .logodiv{
+        width: 90vw;
+    }
+
+    .slogan {
+        padding: 3vh;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textspeech {
+        display: none;
+    }
+}
